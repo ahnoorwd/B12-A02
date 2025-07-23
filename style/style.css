@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 .noto-serif-noto {
   font-family: "Noto Serif", serif;
@@ -16,4 +18,118 @@
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ background-color: #f9f9f9;
+}
+
+/* common style are here  */
+
+.cmn-color{
+    color: #E95A08;
+}
+.cmn-text{
+    color: gray;
+    font-size: 22px;
+}
+
+
+
+
+.navbar-container {
+  /* optional, you can change */
+  /* padding: 20px 0; */
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+.logo img {
+  width: 135px;
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  /* font-weight: 500; */
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* banner style is here  */
+
+.banner-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 2px solid green;
+}
+.flower-div{
+    display: flex;
+    align-items:center;
+}
+/* .flower-desc{
+    max-width: 500px;
+    border: 2px solid hotpink;
+} */
+.flowers-title{
+    font-weight: bold;
+    font-size: 60px;
+}
+.flower-img{
+    max-width: 570px;
+    height: 300px;
+}
+
+
+/* media screen control here  */
+
+@media screen and (max-width:576px) {
+    .navbar{
+        padding: 10px;
+    }
+    .hide{
+      display: none;  
+    }
+    .flower-div{
+        flex-direction: column-reverse;
+    }
+    .flowers-title{
+    font-weight: bold;
+    font-size: 30px;
+   }
+   .banner-container{
+   padding: 10px;
+   }
+   .navbar-container{
+    margin-bottom: 50px;
+   }
 }
