@@ -91,6 +91,7 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     border: 2px solid green;
+    margin-bottom: 100px;
 }
 .flower-div{
     display: flex;
@@ -108,6 +109,84 @@ body{
     max-width: 570px;
     height: 300px;
 }
+
+/* the plant's section is strat here  */
+
+.plants-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* padding: 40px 20px; */
+  text-align: center;
+  /* border: 2px solid firebrick; */
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-header .highlight {
+  color: orange;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  font-size:18px;
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.section-header .underline {
+ max-width: 1000px;
+  height: 3px;
+  background-color: pink;
+  margin: 0 auto 30px;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* .plant-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+} */
+
+.plant-card img {
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.plant-card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.plant-card .price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  background-color: darkorange;
+}
+
 
 
 /* media screen control here  */
@@ -129,7 +208,12 @@ body{
    .banner-container{
    padding: 10px;
    }
+  
    .navbar-container{
     margin-bottom: 50px;
    }
+   .plants-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
 }
