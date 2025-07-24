@@ -104,8 +104,8 @@ body{
     font-size: 60px;
 }
 .flower-img{
-    max-width: 570px;
-    height: 300px;
+    /* max-width: 570px;
+    height: 300px; */
 }
 
 /* the plant's section is strat here  */
@@ -145,6 +145,7 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  
 }
 
 /* .plant-card {
@@ -154,7 +155,7 @@ body{
 } */
 
 .plant-card img {
-  width: 270px;
+  max-width: 270px;
   height: 300px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -239,7 +240,100 @@ body{
    color: #555; 
   line-height:1.6;
 }
+/* the latest section is start from here  */
 
+.latest-deals-text{
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 2px solid red;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.text-deals{
+  max-width: 880px;
+  border: 2px solid salmon;
+  margin: 0 auto;
+  padding: 10px;
+}
+.latest-deals-title{
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+/* latest grid section is here  */
+
+
+.container {
+  max-width: 1140px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Grid layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+
+/* Card Styles */
+.offer-card {
+  position: relative;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.offer-card .text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.offer-card .text h2,
+.offer-card .text h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.offer-card .text a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 14px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Background Images */
+.bloom {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-image: url('../assets/deal-bloom.png'); /* Replace with actual image path */
+}
+
+.ana {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-image: url('../assets/deal-ana.png'); /* Replace with actual image path */
+}
+
+.zabo {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-image: url('../assets/deal-zabo.png'); /* Replace with actual image path */
+}
 
 /* media screen control here  */
 
@@ -254,6 +348,7 @@ body{
         flex-direction: column-reverse;
         gap: 20px;
     }
+  
     .flowers-title{
     font-weight: bold;
     font-size: 30px;
@@ -266,8 +361,8 @@ body{
     margin-bottom: 50px;
    }
    .plants-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
  }
  
  .section-content {
@@ -281,10 +376,25 @@ body{
     .badge {
     display: none;
   }
+   .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .bloom,.ana,.zabo {
+    grid-column: 1 / 2 !important;
+    grid-row: auto !important;
+    height: 200px;
+  }
 
 }
 
-
-
-
-/* ✅ Additional rule for max-width: 425px */
+/* Additional rule for max-width: 425px */
+@media screen and (max-width: 425px) {
+  .plants-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    background-color: yellow;
+  }
+  
+}
