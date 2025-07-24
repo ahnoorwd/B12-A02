@@ -35,11 +35,9 @@ body{
     color: #E95A08;
 }
 .cmn-text{
-    color: gray;
+    color:rgba(0, 0, 0, 0.5); 
     font-size: 22px;
 }
-
-
 
 
 .navbar-container {
@@ -187,6 +185,60 @@ body{
   background-color: darkorange;
 }
 
+/* the flower and lovu section is here  */
+
+
+
+.section-container {
+  max-width: 1140px;
+  margin: 100px auto;
+  position: relative;
+  /* background-color: white; */
+  border: 2px solid green;
+}
+
+.badge {
+  position: absolute;
+  top: -80px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  z-index: 10;
+}
+
+.section-content {
+  display: flex;
+  /* background-color: #ffffff; */
+}
+
+.left-image img {
+   width:540px; 
+   height: 450px;
+   object-fit: cover;
+   /* max-width: 570px;  */
+   
+}
+
+ .right-text {
+   padding: 40px; 
+  /* background-color: #ffffff;
+  flex: 1; */
+  border: 2px solid sandybrown;
+} 
+
+.right-text h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.right-text ul {
+  list-style: disc;
+  padding-left: 20px;
+   color: #555; 
+  line-height:1.6;
+}
 
 
 /* media screen control here  */
@@ -200,6 +252,7 @@ body{
     }
     .flower-div{
         flex-direction: column-reverse;
+        gap: 20px;
     }
     .flowers-title{
     font-weight: bold;
@@ -215,5 +268,23 @@ body{
    .plants-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+ }
+ 
+ .section-content {
+  flex-direction: column;
+  
 }
+ .left-image img {
+    width: 100%;
+    height: auto;
+  }
+    .badge {
+    display: none;
+  }
+
 }
+
+
+
+
+/* ✅ Additional rule for max-width: 425px */
