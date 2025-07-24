@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 .noto-serif-noto {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -38,8 +37,6 @@ body{
     color:rgba(0, 0, 0, 0.5); 
     font-size: 22px;
 }
-
-
 .navbar-container {
   /* optional, you can change */
   /* padding: 20px 0; */
@@ -53,7 +50,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .logo img {
@@ -88,26 +85,18 @@ body{
 .banner-container{
     max-width: 1140px;
     margin: 0 auto;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-bottom: 100px;
 }
 .flower-div{
     display: flex;
     align-items:center;
 }
-/* .flower-desc{
-    max-width: 500px;
-    border: 2px solid hotpink;
-} */
+
 .flowers-title{
     font-weight: bold;
     font-size: 60px;
 }
-.flower-img{
-    /* max-width: 570px;
-    height: 300px; */
-}
-
 /* the plant's section is strat here  */
 
 .plants-section {
@@ -147,13 +136,6 @@ body{
   gap: 10px;
   
 }
-
-/* .plant-card {
-  background-color: white;
-  padding: 10px;
-  border-radius: 4px;
-} */
-
 .plant-card img {
   max-width: 270px;
   height: 300px;
@@ -188,14 +170,12 @@ body{
 
 /* the flower and lovu section is here  */
 
-
-
 .section-container {
   max-width: 1140px;
   margin: 100px auto;
   position: relative;
   /* background-color: white; */
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .badge {
@@ -223,9 +203,6 @@ body{
 
  .right-text {
    padding: 40px; 
-  /* background-color: #ffffff;
-  flex: 1; */
-  border: 2px solid sandybrown;
 } 
 
 .right-text h2 {
@@ -245,13 +222,13 @@ body{
 .latest-deals-text{
   max-width: 1440px;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   text-align: center;
   margin-bottom: 40px;
 }
 .text-deals{
   max-width: 880px;
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   margin: 0 auto;
   padding: 10px;
 }
@@ -320,19 +297,19 @@ body{
 .bloom {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  background-image: url('../assets/deal-bloom.png'); /* Replace with actual image path */
+  background-image: url('../assets/deal-bloom.png'); 
 }
 
 .ana {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background-image: url('../assets/deal-ana.png'); /* Replace with actual image path */
+  background-image: url('../assets/deal-ana.png'); 
 }
 
 .zabo {
   grid-column: 2 / 4;
   grid-row: 1 / 3;
-  background-image: url('../assets/deal-zabo.png'); /* Replace with actual image path */
+  background-image: url('../assets/deal-zabo.png'); 
 }
 
 /* the join barnch is here  */
@@ -386,15 +363,6 @@ body{
   cursor: pointer;
   border-radius: 0;
 }
-
-/* footer style is here  */
-/* .footer-items{
-  display: flex;
-  justify-content: space-around;
-}
-.logo-img-footer{
-  width:100px;
-} */
 
 .footer {
   background-color: #111;
